@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sida440746.github.io/home-cn-i-game-com-cn/sitemap.xml
