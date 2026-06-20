@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炸金花 – 资料索引与风格指南</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #faf9f7;
+            color: #2c2b28;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .page {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2.8rem 1.2rem 3.6rem;
+        }
+        /* hero */
+        .hero {
+            margin-bottom: 4rem;
+            text-align: center;
+            border-bottom: 1px solid #eae7e0;
+            padding-bottom: 2.8rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 450;
+            letter-spacing: 2px;
+            color: #1f1e1b;
+            margin-bottom: 0.6rem;
+            line-height: 1.2;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #7d7a74;
+            max-width: 480px;
+            margin: 0 auto;
+            font-weight: 350;
+            border-top: 1px dotted #d6d2ca;
+            padding-top: 1.4rem;
+            margin-top: 0.8rem;
+        }
+        /* 通用标题 */
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 450;
+            letter-spacing: 0.5px;
+            margin: 3.2rem 0 1.2rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #e2ddd4;
+            color: #2c2b28;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 420;
+            margin: 1.8rem 0 0.6rem;
+            color: #3f3c36;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #3b3935;
+        }
+        a {
+            color: #3d5a5c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.15s;
+        }
+        a:hover {
+            color: #1f3a3b;
+            text-decoration-color: #1f3a3b;
+        }
+        /* 卡片组 */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2.2rem 0 1.2rem;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #e8e4dd;
+            border-radius: 0;
+            padding: 1.6rem 1.4rem;
+            flex: 1 1 200px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+        .card h4 {
+            font-weight: 400;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.3px;
+            color: #1f1e1b;
+        }
+        .card p {
+            font-size: 0.92rem;
+            color: #58544e;
+            margin-bottom: 0.2rem;
+        }
+        /* 列表式说明区 */
+        .faq-item {
+            margin: 1.4rem 0;
+            padding-left: 0.2rem;
+        }
+        .faq-item strong {
+            font-weight: 480;
+            display: inline-block;
+            margin-bottom: 0.2rem;
+            color: #2c2b28;
+            font-size: 1.02rem;
+        }
+        .faq-item p {
+            margin: 0.2rem 0 0.8rem 0;
+            color: #4a4640;
+        }
+        .faq-item p:last-child {
+            margin-bottom: 0;
+        }
+        .summary-note {
+            background: #f3f0eb;
+            padding: 1.4rem 1.6rem;
+            margin: 2.6rem 0 1.2rem;
+            border-left: 2px solid #b3aea5;
+            font-size: 0.96rem;
+            color: #3f3c36;
+        }
+        .summary-note a {
+            color: #3d5a5c;
+        }
+        /* 底部 */
+        .footer-links {
+            margin-top: 3.4rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2ddd4;
+            font-size: 0.9rem;
+            color: #706c64;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem 2.2rem;
+        }
+        .footer-links a {
+            color: #4f5b57;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        .footer-links a:hover {
+            border-bottom-color: #3d5a5c;
+        }
+        .fine-print {
+            font-size: 0.8rem;
+            color: #9c9790;
+            margin-top: 2rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ece8e0;
+            margin: 2rem 0;
+        }
+        /* 响应式 */
+        @media (max-width: 480px) {
+            .page { padding: 2rem 1rem 3rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .card-grid { gap: 1rem; }
+            .card { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <header class="hero">
+        <h1>炸金花 · 资料札记</h1>
+        <div class="sub">花色与概率 · 规则与变体 · 一份非正式的整理索引</div>
+    </header>
+
+    <!-- 优势区 / 特点卡片 -->
+    <section>
+        <h2>为什么持续关注这一玩法</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h4>规则边界清晰</h4>
+                <p>豹子、同花顺、金花、顺子…… 牌型等级经过长期博弈沉淀，逻辑自洽，几乎没有模糊地带。</p>
+            </div>
+            <div class="card">
+                <h4>信息密度适中</h4>
+                <p>三张牌的组合数有限（22,100 种），恰好够产生丰富的概率情境，又不会因信息过载而难以复盘。</p>
+            </div>
+            <div class="card">
+                <h4>心理层次丰富</h4>
+                <p>从跟注、加注到弃牌，每个决策都包含对底牌、位置、对手习惯的推断。这种博弈结构本身即是素材。</p>
+            </div>
+        </div>
+        <p style="margin-top:0.6rem;">以上三点让 <a href="https://m--goldenflower.com">炸金花</a> 成为许多牌类爱好者持续讨论的对象。无论是概率计算还是临场判断，都留有足够的整理空间。</p>
+    </section>
+
+    <!-- 说明区 / 从资料整理的角度 -->
+    <section>
+        <h2>从信息索引看炸金花</h2>
+        <p>如果将《炸金花》视为一个知识主题，它的资料分布大致可以分为三类：</p>
+        <ul style="margin-left:1.4rem; list-style:square; color:#3b3935; margin-bottom:1.8rem;">
+            <li><strong>规则文档</strong> – 各地习惯、特殊规则（如“闷牌”轮次、喜钱结算）的记载与对照；</li>
+            <li><strong>概率明细表</strong> – 各种牌型的出现概率、不同人数下的成牌期望，以及常见的赔率参考；</li>
+            <li><strong>策略笔记</strong> – 位置、下注节奏、弃牌率等经验归纳，多为玩家自发的总结而非官方教程。</li>
+        </ul>
+        <p>这个分类框架不依赖任何特定平台，任何对 <a href="https://m--goldenflower.com">炸金花</a> 感兴趣的人都可以根据自身需要，选择不同深度的资料进行查阅。关键在于保持信息的原始上下文，避免过度加工造成的失真。</p>
+    </section>
+
+    <!-- 场景 / 适合哪些人阅读 -->
+    <section>
+        <h2>适合的阅读场景</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:0.8rem 1.6rem; margin:1rem 0 1.8rem;">
+            <span style="background:#efede8; padding:0.2rem 1rem; border-radius:0; font-size:0.9rem;">规则入门者</span>
+            <span style="background:#efede8; padding:0.2rem 1rem; border-radius:0; font-size:0.9rem;">概率爱好者</span>
+            <span style="background:#efede8; padding:0.2rem 1rem; border-radius:0; font-size:0.9rem;">玩法历史考据</span>
+            <span style="background:#efede8; padding:0.2rem 1rem; border-radius:0; font-size:0.9rem;">非正式策略交流</span>
+        </div>
+        <p>本页不提供“必胜技巧”或“快速赢钱”之类承诺，更侧重于将已有的公开资料进行归类与索引。如果你曾因为规则争议或概率问题感到困惑，这里或许能帮你找到更清晰的梳理方向。</p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>FAQ 摘要 · 来自常见讨论</h2>
+        <div class="faq-item">
+            <strong>Q：不同地区对“235”能否吃豹子的规定为何不一致？</strong>
+            <p>这属于地方性约定，不存在统一的官方规则。在整理资料时，建议注明来源地区，避免以偏概全。大多数公开的规则文档都会附带地域说明。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：同花顺和豹子哪个概率更低？</strong>
+            <p>标准 52 张牌且无赖子时，豹子出现概率约 0.235%，同花顺约 0.199%，后者略低。但实际对局中因弃牌、人数等因素，频率会有浮动。许多概率表都列出了精确组合数，可以自行对照。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：所谓“闷牌”策略有依据吗？</strong>
+            <p>“闷牌”（不看牌持续下注）本质上是一种信息不对称策略。少数玩家的经验笔记会记录特定场景下的交锋案例，但尚未看到大规模统计分析。建议把它当作一种情境描述而非普适方法。</p>
+        </div>
+        <div class="summary-note">
+            以上问答基于网络公开讨论与牌友社群中反复出现的话题整理而成。如果你想阅读更完整的规则说明或查看详细概率表，可以访问 <a href="https://m--goldenflower.com">炸金花</a> 的相关页面。
+        </div>
+    </section>
+
+    <!-- 额外提示 -->
+    <hr>
+    <p style="font-size:0.92rem; color:#5d5952; background:#f8f6f3; padding:0.8rem 1.2rem; border-radius:0;">
+        ⚬ 本页为资料索引性质，不涉及任何资金交易或在线对局推荐。<br>
+        ⚬ 所有引用均基于公开可查的内容，如有更准确的资料欢迎补充。
+    </p>
+
+    <!-- 底部链接 -->
+    <footer class="footer-links">
+        <span><a href="https://m--goldenflower.com">炸金花</a> · 规则概览</span>
+        <span>资料归档 · 概率笔记</span>
+        <span>常见牌型对照</span>
+        <span>社群讨论索引</span>
+    </footer>
+    <div class="fine-print">
+        内容整理于公开信息 · 仅供个人参考
+    </div>
+</div>
+</body>
+</html>
